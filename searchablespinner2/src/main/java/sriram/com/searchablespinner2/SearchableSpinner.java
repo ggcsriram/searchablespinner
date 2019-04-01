@@ -88,6 +88,7 @@ public class SearchableSpinner extends AppCompatSpinner implements View.OnTouchL
                 @Override
                 public boolean onQueryTextChange(String s) {
 
+//to filter the listview
                     ((ArrayAdapter) listView.getAdapter()).getFilter().filter(s);
 
                     newarraylist.clear();
